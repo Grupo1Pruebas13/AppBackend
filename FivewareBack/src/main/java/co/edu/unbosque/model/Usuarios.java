@@ -43,13 +43,4 @@ public class Usuarios {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	@Override
-	public String toString() {
-		return "Usuarios [cedula_usuario=" + cedula_usuario + ", nombre_usuario=" + nombre_usuario + ", email_usuario="
-				+ email_usuario + ", usuario=" + usuario + ", password=" + password + "]";
-	}
-	
-	
-	
 }
