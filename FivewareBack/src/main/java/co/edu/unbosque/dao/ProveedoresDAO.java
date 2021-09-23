@@ -1,5 +1,9 @@
 package co.edu.unbosque.dao;
 
-public interface ProveedoresDAO {
+import org.springframework.data.jpa.repository.JpaRepository;
+import co.edu.unbosque.model.Proveedores;
+
+
+public interface ProveedoresDAO extends JpaRepository<Proveedores, Long>{
 
 }
