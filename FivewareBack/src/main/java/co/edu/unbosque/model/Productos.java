@@ -9,7 +9,7 @@ public class Productos {
 	@Id
 	private Long codigo_producto;
 	private double ivacompra;
-	private long nitproveedor;
+	private Long nitproveedor;
 	private String nombre_producto;
 	private double precio_compra;
 	private double precio_venta;
@@ -26,10 +26,10 @@ public class Productos {
 	public void setIvacompra(double ivacompra) {
 		this.ivacompra = ivacompra;
 	}
-	public long getNitproveedor() {
+	public Long getNitproveedor() {
 		return nitproveedor;
 	}
-	public void setNitproveedor(long nitproveedor) {
+	public void setNitproveedor(Long nitproveedor) {
 		this.nitproveedor = nitproveedor;
 	}
 	public String getNombre_producto() {
