@@ -32,7 +32,7 @@ public class ClientesAPI {
 		return clientesDao.findAll(); 
 	}
 	
-	@DeleteMapping("/elimidar/{id}")
+	@DeleteMapping("/eliminar/{id}")
 	public void eliminar(@PathVariable("id") Long id) {
 		clientesDao.deleteById(id);
 	}
