@@ -13,10 +13,10 @@ public class Proveedores {
 	private String nombre_proveedor;
 	private String telefono_proveedor;
 	
-	public Long getNit_proveedor() {
+	public Long getNitproveedor() {
 		return nitproveedor;
 	}
-	public void setNit_proveedor(Long nitproveedor) {
+	public void setNitproveedor(Long nitproveedor) {
 		this.nitproveedor = nitproveedor;
 	}
 	public String getCiudad_proveedor() {
@@ -42,8 +42,5 @@ public class Proveedores {
 	}
 	public void setTelefono_proveedor(String telefono_proveedor) {
 		this.telefono_proveedor = telefono_proveedor;
-	}
-	
-	
-	
+	}	
 }
