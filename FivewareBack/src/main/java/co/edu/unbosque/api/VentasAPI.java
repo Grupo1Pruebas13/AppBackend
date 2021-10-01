@@ -1,7 +1,23 @@
 package co.edu.unbosque.api;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-public class VentasAPI {
+import co.edu.unbosque.dao.VentasDAO;
+import co.edu.unbosque.model.Ventas;
+
+@RestController 
+@RequestMapping("ventas")
+public class VentasAPI {	
 	
-
+		@Autowired
+		private VentasDAO ventasDao;
+		
+		@PostMapping("/guardar")
+		public void guardar(@RequestBody Ventas ventas){
+			ventasDao.save(ventas);
+		}
 }
