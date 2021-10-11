@@ -1,30 +1,33 @@
 package co.edu.unbosque.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Detalle_ventas {
 
 	@Id
-	private Long codigo_detalle_venta;
-	private int cantidad_producto;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer codigo_detalle_venta;
+	private Integer cantidad_producto;
 	private Long codigo_producto;
 	private Long codigo_venta;
-	private double valor_total;
-	private double valor_venta;
-	private double valoriva;
+	private Double valor_total;
+	private Double valor_venta;
+	private Double valoriva;
 	
-	public Long getCodigo_detalle_venta() {
+	public Integer getCodigo_detalle_venta() {
 		return codigo_detalle_venta;
 	}
-	public void setCodigo_detalle_venta(Long codigo_detalle_venta) {
+	public void setCodigo_detalle_venta(Integer codigo_detalle_venta) {
 		this.codigo_detalle_venta = codigo_detalle_venta;
 	}
-	public int getCantidad_producto() {
+	public Integer getCantidad_producto() {
 		return cantidad_producto;
 	}
-	public void setCantidad_producto(int cantidad_producto) {
+	public void setCantidad_producto(Integer cantidad_producto) {
 		this.cantidad_producto = cantidad_producto;
 	}
 	public Long getCodigo_producto() {
@@ -39,23 +42,22 @@ public class Detalle_ventas {
 	public void setCodigo_venta(Long codigo_venta) {
 		this.codigo_venta = codigo_venta;
 	}
-	public double getValor_total() {
+	public Double getValor_total() {
 		return valor_total;
 	}
-	public void setValor_total(double valor_total) {
+	public void setValor_total(Double valor_total) {
 		this.valor_total = valor_total;
 	}
-	public double getValor_venta() {
+	public Double getValor_venta() {
 		return valor_venta;
 	}
-	public void setValor_venta(double valor_venta) {
+	public void setValor_venta(Double valor_venta) {
 		this.valor_venta = valor_venta;
 	}
-	public double getValoriva() {
+	public Double getValoriva() {
 		return valoriva;
 	}
-	public void setValoriva(double valoriva) {
+	public void setValoriva(Double valoriva) {
 		this.valoriva = valoriva;
 	}
-	
 }
